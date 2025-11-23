@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <link rel="stylesheet" href="src/styles/header.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Fabricio Lennart - Portfolio</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <i class="fa-solid fa-laptop-code" id="nav_logo"> Datadev</i>
+
+            <ul id="nav_list">
+                <li class="nav-item active">
+                    <a href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#resume">Resume</a>
+                </li>
+            </ul>
+
+            <a href="mailto:fabrilennart@gmail.com" class="btn-default">
+                Contact Me
+            </a>
+
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item">
+                    <a href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#resume">Resume</a>
+                </li>
+            </ul>
+
+            <a href="mailto:fabrilennart@gmail.com" class="btn-default">
+                Contact Me
+            </a>
+        </div>
+    </header>
+    
+    <main id="content">
+        <section id="home">
+            <div class="shape"></div>
+            <div id="cta">
+                <h1 class="title">
+                    Fabricio Lennart
+                    <span>Data and Software</span>
+                </h1>
+
+                <p class="description">
+                    I build data systems that save you time, money, and headaches.
+                </p>
+
+                <div id="cta_buttons">
+                    <a href="https://github.com/fabri-lennart" class="btn-default" target="_blank" rel="noopener">
+                        See Github
+                    </a>
+
+                    <a href="tel:+5511989481949" id="phone_button">
+                        <button class="btn-default">
+                            <i class="fa-solid fa-phone"></i>
+                            +55 11 98948-1949
+                        </button>
+                    </a>
+                </div>
+
+                <div class="social-media-buttons">
+                    <a href="https://wa.me/5511989481949" target="_blank" rel="noopener" title="WhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/fabricio-lennart/" target="_blank" rel="noopener" title="LinkedIn">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://youtube.com/@fabribits?si=ra7X3BvQuBYB99je" target="_blank" rel="noopener" title="YouTube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <a href="https://x.com/FabricioLennart" target="_blank" rel="noopener" title="X (Twitter)">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div id="banner">
+                <img src="src/images/Fabricio - foto formal-Photoroom.png" alt="Fabricio Lennart">
+            </div>
+        </section>
+
+        <section id="services">
+            <h2 class="section-title">Services</h2>
+            <h3 class="section-subtitle">What I can do for you</h3>
+
+            <div id="dishes">
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+
+                    <div class="service-icon">
+                        <i class="fa-solid fa-chart-pie"></i>
+                    </div>
+
+                    <h3 class="dish-title">
+                        Data Visualization
+                    </h3>
+
+                    <span class="dish-description">
+                        Transform complex data into clear, actionable insights with beautiful dashboards and reports using Tableau, Power BI, and Python.
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(50+ projects)</span>
+                    </div>
+
+                    <div class="dish-price">
+                        <a href="YOUR_VISUALIZATION_URL" class="btn-default" target="_blank" rel="noopener">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-magnifying-glass-chart"></i>
+                    </div>
+
+                    <div class="service-icon">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+
+                    <h3 class="dish-title">
+                        Data Analytics
+                    </h3>
+
+                    <span class="dish-description">
+                        Deep dive into your data to uncover patterns, trends, and opportunities. Statistical analysis and predictive modeling to drive decisions.
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(40+ projects)</span>
+                    </div>
+
+                    <div class="dish-price">
+                        <a href="YOUR_ANALYTICS_URL" class="btn-default" target="_blank" rel="noopener">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-diagram-project"></i>
+                    </div>
+
+                    <div class="service-icon">
+                        <i class="fa-solid fa-code-branch"></i>
+                    </div>
+
+                    <h3 class="dish-title">
+                        Data Pipelines
+                    </h3>
+
+                    <span class="dish-description">
+                        Build robust ETL/ELT pipelines to collect, transform, and deliver data efficiently. Scalable solutions using Apache Airflow and Python.
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(35+ projects)</span>
+                    </div>
+
+                    <div class="dish-price">
+                        <a href="YOUR_PIPELINES_URL" class="btn-default" target="_blank" rel="noopener">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-gear"></i>
+                    </div>
+
+                    <div class="service-icon">
+                        <i class="fa-solid fa-robot"></i>
+                    </div>
+
+                    <h3 class="dish-title">
+                        Automation
+                    </h3>
+
+                    <span class="dish-description">
+                        Automate repetitive tasks and workflows to save time and reduce errors. Custom scripts and bots for business process optimization.
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(60+ projects)</span>
+                    </div>
+
+                    <div class="dish-price">
+                        <a href="YOUR_AUTOMATION_URL" class="btn-default" target="_blank" rel="noopener">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <div id="testimonials_content">
+                <h2 class="section-title">
+                    Testimonials
+                </h2>
+                <h3 class="section-subtitle">
+                    What clients say about my work
+                </h3>
+
+                <div id="feedbacks">
+                    <div class="feedback">
+                        <img src="src/images/avatar.png" class="feedback-avatar" alt="">
+
+                        <div class="feedback-content">
+                            <p>
+                                Sarah Mitchell, CEO at TechFlow
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>
+                                "Fabricio built an amazing data pipeline for our e-commerce platform. 
+                                The automation saved us 20+ hours per week and the dashboards provide 
+                                real-time insights we never had before. Highly recommended!"
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feedback">
+                        <img src="src/images/avatar.png" class="feedback-avatar" alt="">
+
+                        <div class="feedback-content">
+                            <p>
+                                Marcus Johnson, Data Manager
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>
+                                "Working with Fabricio was a game-changer. His expertise in data analytics 
+                                helped us identify key business opportunities we were missing. Professional, 
+                                reliable, and delivers exceptional results."
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feedback">
+                        <img src="src/images/avatar.png" class="feedback-avatar" alt="">
+
+                        <div class="feedback-content">
+                            <p>
+                                Ana Silva, Marketing Director
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>
+                                "The Tableau dashboards Fabricio created transformed how we track our campaigns. 
+                                Clear, intuitive, and exactly what we needed. He understood our requirements perfectly 
+                                and delivered beyond expectations."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="resume">
+            <h2 class="section-title">Resume Dashboard</h2>
+            <h3 class="section-subtitle">Interactive overview of my experience and skills</h3>
+
+            <div id="tableau-container">
+                <div class='tableauPlaceholder' id='viz1763866501165' style='position: relative'>
+                    <noscript>
+                        <a href='#'>
+                            <img alt='INTERACTIVE RESUME ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Si&#47;SimpleCV_Resume&#47;RESUME-FABRICIOLENNART&#47;1_rss.png' style='border: none' />
+                        </a>
+                    </noscript>
+                    <object class='tableauViz' style='display:none;'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                        <param name='embed_code_version' value='3' />
+                        <param name='site_root' value='' />
+                        <param name='name' value='SimpleCV_Resume&#47;RESUME-FABRICIOLENNART' />
+                        <param name='tabs' value='no' />
+                        <param name='toolbar' value='yes' />
+                        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Si&#47;SimpleCV_Resume&#47;RESUME-FABRICIOLENNART&#47;1.png' />
+                        <param name='animate_transition' value='yes' />
+                        <param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' />
+                        <param name='display_count' value='yes' />
+                        <param name='language' value='en-US' />
+                        <param name='filter' value='publish=yes' />
+                    </object>
+                </div>
+                <script type='text/javascript'>
+                    var divElement = document.getElementById('viz1763866501165');
+                    var vizElement = divElement.getElementsByTagName('object')[0];
+                    vizElement.style.width = '100%';
+                    vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+                    var scriptElement = document.createElement('script');
+                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                </script>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <img src="src/images/wave.svg" alt="">
+
+        <div id="footer_items">
+            <span id="copyright">
+                &copy; 2024 Fabricio Lennart
+            </span>
+
+            <div class="social-media-buttons">
+                <a href="https://wa.me/5511989481949" target="_blank" rel="noopener">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/fabricio-lennart/" target="_blank" rel="noopener">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+
+                <a href="https://youtube.com/@fabribits?si=ra7X3BvQuBYB99je" target="_blank" rel="noopener">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="src/javascript/script.js"></script>
+</body>
+</html>
