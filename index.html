@@ -12,24 +12,32 @@
             integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" 
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Fabricio Lennart - Data and Software</title>
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "vjjt73inrc");
+    </script>
 </head>
 <body>
+
     <header>
         <nav id="navbar">
-            <i class="fa-solid fa-database" id="nav_logo">Fabricio Lennart</i>
+            <span id="nav_logo">
+                <i class="fa-solid fa-database"></i>Fabricio Lennart
+            </span>
 
             <ul id="nav_list">
-                <li class="nav-item">
-                    <a href="#home">Home</a>
+                <li class="nav-item active">
+                    <a href="#home">home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#services">Services</a>
+                    <a href="#services">services</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#testimonials">Testimonials</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#resume">Resume</a>
+                    <a href="#testimonials">testimonials</a>
                 </li>
             </ul>
 
@@ -45,16 +53,13 @@
         <div id="mobile_menu">
             <ul id="mobile_nav_list">
                 <li class="nav-item">
-                    <a href="#home">Home</a>
+                    <a href="#home">home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#services">Services</a>
+                    <a href="#services">services</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#testimonials">Testimonials</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#resume">Resume</a>
+                    <a href="#testimonials">testimonials</a>
                 </li>
             </ul>
 
@@ -65,12 +70,16 @@
     </header>
     
     <main id="content">
+
+        <!-- ======== HOME ======== -->
         <section id="home">
             <div class="shape"></div>
+
             <div id="cta">
+                <p class="prompt-prefix">fabri@terminal:~$ whoami</p>
                 <h1 class="title">
-                    Fabricio Lennart
-                    <span>Data and Software</span>
+                    Fabricio Lennart<span class="cursor"></span>
+                    <span>Data &amp; Software</span>
                 </h1>
 
                 <p class="description">
@@ -79,7 +88,7 @@
 
                 <div id="cta_buttons">
                     <a href="https://github.com/fabri-lennart" class="btn-default" target="_blank" rel="noopener">
-                        See Github
+                        <i class="fa-brands fa-github" style="margin-right:8px"></i> GitHub
                     </a>
 
                     <a href="tel:+5511989481949" id="phone_button">
@@ -111,23 +120,22 @@
             </div>
         </section>
 
+        <!-- ======== SERVICES ======== -->
         <section id="services">
             <h2 class="section-title">Services</h2>
             <h3 class="section-subtitle">What I can do for you</h3>
 
             <div id="dishes">
+
+                <!-- Data Visualization -->
                 <div class="dish">
-                    <div class="dish-heart">
-                        <i class="fa-solid fa-chart-line"></i>
-                    </div>
+                    <span class="dish-badge">50+ projects</span>
 
                     <div class="service-icon">
                         <i class="fa-solid fa-chart-pie"></i>
                     </div>
 
-                    <h3 class="dish-title">
-                        Data Visualization
-                    </h3>
+                    <h3 class="dish-title">Data Visualization</h3>
 
                     <span class="dish-description">
                         Transform complex data into clear, actionable insights with beautiful dashboards and reports using Tableau, Power BI, and Python.
@@ -139,28 +147,25 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
-                        <span>(50+ projects)</span>
+                        <span>5.0</span>
                     </div>
 
                     <div class="dish-price">
-                        <a href="YOUR_VISUALIZATION_URL" class="btn-default" target="_blank" rel="noopener">
+                        <a href="#" class="btn-default" target="_blank" rel="noopener">
                             Learn More
                         </a>
                     </div>
                 </div>
 
+                <!-- Data Analytics -->
                 <div class="dish">
-                    <div class="dish-heart">
-                        <i class="fa-solid fa-magnifying-glass-chart"></i>
-                    </div>
+                    <span class="dish-badge">40+ projects</span>
 
                     <div class="service-icon">
                         <i class="fa-solid fa-database"></i>
                     </div>
 
-                    <h3 class="dish-title">
-                        Data Analytics
-                    </h3>
+                    <h3 class="dish-title">Data Analytics</h3>
 
                     <span class="dish-description">
                         Deep dive into your data to uncover patterns, trends, and opportunities. Statistical analysis and predictive modeling to drive decisions.
@@ -172,61 +177,25 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
-                        <span>(40+ projects)</span>
+                        <span>5.0</span>
                     </div>
 
                     <div class="dish-price">
-                        <a href="YOUR_ANALYTICS_URL" class="btn-default" target="_blank" rel="noopener">
+                        <a href="#" class="btn-default" target="_blank" rel="noopener">
                             Learn More
                         </a>
                     </div>
                 </div>
 
+                <!-- Automation -->
                 <div class="dish">
-                    <div class="dish-heart">
-                        <i class="fa-solid fa-diagram-project"></i>
-                    </div>
-
-                    <div class="service-icon">
-                        <i class="fa-solid fa-code-branch"></i>
-                    </div>
-
-                    <h3 class="dish-title">
-                        Data Pipelines
-                    </h3>
-
-                    <span class="dish-description">
-                        Build robust ETL/ELT pipelines to collect, transform, and deliver data efficiently. Scalable solutions using Apache Airflow and Python.
-                    </span>
-
-                    <div class="dish-rate">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <span>(35+ projects)</span>
-                    </div>
-
-                    <div class="dish-price">
-                        <a href="YOUR_PIPELINES_URL" class="btn-default" target="_blank" rel="noopener">
-                            Learn More
-                        </a>
-                    </div>
-                </div>
-
-                <div class="dish">
-                    <div class="dish-heart">
-                        <i class="fa-solid fa-gear"></i>
-                    </div>
+                    <span class="dish-badge">60+ projects</span>
 
                     <div class="service-icon">
                         <i class="fa-solid fa-robot"></i>
                     </div>
 
-                    <h3 class="dish-title">
-                        Automation
-                    </h3>
+                    <h3 class="dish-title">Automation</h3>
 
                     <span class="dish-description">
                         Automate repetitive tasks and workflows to save time and reduce errors. Custom scripts and bots for business process optimization.
@@ -238,35 +207,33 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
-                        <span>(60+ projects)</span>
+                        <span>5.0</span>
                     </div>
 
                     <div class="dish-price">
-                        <a href="YOUR_AUTOMATION_URL" class="btn-default" target="_blank" rel="noopener">
+                        <a href="#" class="btn-default" target="_blank" rel="noopener">
                             Learn More
                         </a>
                     </div>
                 </div>
+
             </div>
         </section>
 
+        <!-- ======== TESTIMONIALS ======== -->
         <section id="testimonials">
             <div id="testimonials_content">
-                <h2 class="section-title">
-                    Testimonials
-                </h2>
-                <h3 class="section-subtitle">
-                    What people say about my work
-                </h3>
+                <h2 class="section-title">Testimonials</h2>
+                <h3 class="section-subtitle">What people say about my work</h3>
 
                 <div id="feedbacks">
+
                     <!-- Omar Valdez -->
                     <div class="feedback">
                         <img src="src/images/omar-valdez.png" class="feedback-avatar" alt="Omar Valdez">
-
                         <div class="feedback-content">
                             <p>
-                                Omar Valdez G, Data Architect
+                                Omar Valdez G — Data Architect
                                 <span>
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -286,10 +253,9 @@
                     <!-- Brad Fair -->
                     <div class="feedback">
                         <img src="src/images/brad-fair.jpeg" class="feedback-avatar" alt="Brad Fair">
-
                         <div class="feedback-content">
                             <p>
-                                Brad Fair, Principal Solutions Architect
+                                Brad Fair — Principal Solutions Architect
                                 <span>
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -300,21 +266,19 @@
                             </p>
                             <p>
                                 "Fabricio stands out because he exemplifies genuine curiosity alongside logical rigor. 
-                                He did more than just memorize concepts. He'd learn something, then work through its 
-                                implications to apply the information more broadly. His intellectual rigor and systematic 
-                                approach to problem-solving are precisely what you want on a data team. I'd work with 
-                                Fabricio without hesitation."
+                                He did more than just memorize concepts — he'd learn something, then work through its 
+                                implications to apply it more broadly. His systematic approach to problem-solving is 
+                                precisely what you want on a data team."
                             </p>
                         </div>
                     </div>
 
-                    <!-- Alfonso Martínez Allegre -->
+                    <!-- Alfonso Martínez -->
                     <div class="feedback">
                         <img src="src/images/alfonso-martinez.jpeg" class="feedback-avatar" alt="Alfonso Martínez Allegre">
-
                         <div class="feedback-content">
                             <p>
-                                Alfonso Martínez Allegre, Salesforce Consultant
+                                Alfonso Martínez — Salesforce Consultant
                                 <span>
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -326,79 +290,34 @@
                             <p>
                                 "I had the pleasure of working with Fabricio, and I can confidently say he is a true 
                                 professional in every sense of the word. His solid technical expertise truly supports 
-                                his trajectory and enhances the outstanding quality of his work. Fabricio is the kind 
-                                of colleague who elevates any team, and I wholeheartedly recommend him."
+                                his trajectory and enhances the outstanding quality of his work."
                             </p>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
 
-        <section id="resume">
-            <h2 class="section-title">Resume Dashboard</h2>
-            <h3 class="section-subtitle">Interactive overview of my experience and skills</h3>
-
-            <div id="tableau-container">
-                <div class='tableauPlaceholder' id='viz1763866501165' style='position: relative'>
-                    <noscript>
-                        <a href='#'>
-                            <img alt='INTERACTIVE RESUME ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Si&#47;SimpleCV_Resume&#47;RESUME-FABRICIOLENNART&#47;1_rss.png' style='border: none' />
-                        </a>
-                    </noscript>
-                    <object class='tableauViz' style='display:none;'>
-                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-                        <param name='embed_code_version' value='3' />
-                        <param name='site_root' value='' />
-                        <param name='name' value='SimpleCV_Resume&#47;RESUME-FABRICIOLENNART' />
-                        <param name='tabs' value='no' />
-                        <param name='toolbar' value='yes' />
-                        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Si&#47;SimpleCV_Resume&#47;RESUME-FABRICIOLENNART&#47;1.png' />
-                        <param name='animate_transition' value='yes' />
-                        <param name='display_static_image' value='yes' />
-                        <param name='display_spinner' value='yes' />
-                        <param name='display_overlay' value='yes' />
-                        <param name='display_count' value='yes' />
-                        <param name='language' value='en-US' />
-                        <param name='filter' value='publish=yes' />
-                    </object>
-                </div>
-                <script type='text/javascript'>
-                    var divElement = document.getElementById('viz1763866501165');
-                    var vizElement = divElement.getElementsByTagName('object')[0];
-                    vizElement.style.width = '100%';
-                    vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
-                    var scriptElement = document.createElement('script');
-                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-                    vizElement.parentNode.insertBefore(scriptElement, vizElement);
-                </script>
-            </div>
-        </section>
     </main>
 
     <footer>
-        <img src="src/images/wave.svg" alt="">
-
         <div id="footer_items">
             <span id="copyright">
-                &copy; 2024 Fabricio Lennart
+                &copy; 2025 Fabricio Lennart
             </span>
 
             <div class="social-media-buttons">
                 <a href="https://wa.me/5511989481949" target="_blank" rel="noopener">
                     <i class="fa-brands fa-whatsapp"></i>
                 </a>
-
                 <a href="https://www.linkedin.com/in/fabricio-lennart/" target="_blank" rel="noopener">
                     <i class="fa-brands fa-linkedin"></i>
                 </a>
-
                 <a href="https://youtube.com/@fabribits?si=ra7X3BvQuBYB99je" target="_blank" rel="noopener">
                     <i class="fa-brands fa-youtube"></i>
                 </a>
-            </div>
-        </div>
-    </footer>
-    <script src="src/javascript/script.js"></script>
-</body>
-</html>
+                <a href="https://x.com/FabricioLennart" target="_blank" rel="noopener">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+            </di

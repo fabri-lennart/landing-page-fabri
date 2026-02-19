@@ -1,9 +1,25 @@
 header {
     width: 100%;
-    padding: 28px 8%;
+    padding: 20px 8%;
+    border-bottom: 1px solid #3c3836;
+    background: #1d2021;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
-#navbar{
+/* Scanline on header too */
+header::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--green), transparent);
+}
+
+#navbar {
     width: 100%;
     display: flex;
     align-items: center;
@@ -13,28 +29,83 @@ header {
 #nav_logo {
     display: flex;
     align-items: center;
-    gap: 8px;
-    font-size: 18px;
-    color: white;
+    gap: 10px;
+    font-family: 'VT323', monospace;
+    font-size: 1.6rem;
+    color: #ebdbb2;
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#nav_logo i {
+    color: var(--green);
+    font-size: 1.3rem;
+}
+
+/* ASCII bracket decoration */
+#nav_logo::before {
+    content: '[';
+    color: #928374;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 1.2rem;
+    margin-right: -4px;
+}
+
+#nav_logo::after {
+    content: ']';
+    color: #928374;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 1.2rem;
+    margin-left: -4px;
 }
 
 #nav_list {
     display: flex;
     list-style: none;
-    gap: 48px;
+    gap: 40px;
 }
 
 .nav-item a {
     text-decoration: none;
-    color: whitesmoke;
-    font-weight: 600;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 0.85rem;
+    color: #928374;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: color .12s ease;
+    position: relative;
 }
 
-.nav-item.active a{
-    color: whitesmoke;
-    border-bottom: 3px solid #EB5B40;
+.nav-item a::before {
+    content: './';
+    color: #504945;
+    transition: color .12s ease;
 }
 
+.nav-item a:hover {
+    color: #ebdbb2;
+}
+
+.nav-item a:hover::before {
+    color: #b8bb26;
+}
+
+.nav-item.active a {
+    color: #ebdbb2;
+}
+
+.nav-item.active a::before {
+    color: #b8bb26;
+}
+
+/* Contact button in header */
+#navbar > .btn-default {
+    font-size: 1.1rem;
+    padding: 8px 18px;
+}
+
+/* ========== MOBILE ========== */
 #mobile_btn {
     display: none;
 }
@@ -44,37 +115,78 @@ header {
 }
 
 @media screen and (max-width: 1170px) {
-    #nav_list, 
-    #navbar .btn-default
-    {
+    #nav_list,
+    #navbar .btn-default {
         display: none;
     }
 
-    #mobile_btn{
+    #mobile_btn {
         display: block;
-        border: none;
-        background-color: transparent;
-        color: black;
-        font-size: 1.5rem;
+        border: 1px solid #3c3836;
+        background-color: #282828;
+        color: #ebdbb2;
+        font-size: 1.2rem;
         cursor: pointer;
+        padding: 8px 12px;
+        box-shadow: 2px 2px 0 #3c3836;
+        transition: all .12s ease;
+    }
+
+    #mobile_btn:hover {
+        background-color: #3c3836;
+        transform: translate(2px, 2px);
+        box-shadow: none;
+    }
+
+    #mobile_btn i {
+        color: var(--green);
     }
 
     #mobile_menu.active {
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 20px 0;
+        border-top: 1px solid #3c3836;
+        background: #282828;
+        margin: 0 -8%;
+        padding: 20px 8%;
+        gap: 16px;
     }
 
     #mobile_nav_list {
         display: flex;
         flex-direction: column;
         gap: 12px;
-        margin: 12px 0px
-    }
-
-    #mobile_nav_list.nav-item {
         list-style: none;
         text-align: center;
+        width: 100%;
     }
 
+    #mobile_nav_list li a {
+        font-family: 'Share Tech Mono', monospace;
+        font-size: 0.85rem;
+        color: #928374;
+        text-decoration: none;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        display: block;
+        padding: 8px 0;
+        border-bottom: 1px solid #3c3836;
+        transition: color .12s ease;
+    }
+
+    #mobile_nav_list li a::before {
+        content: './';
+        color: #504945;
+    }
+
+    #mobile_nav_list li a:hover {
+        color: #ebdbb2;
+    }
+
+    #mobile_menu > .btn-default {
+        margin-top: 8px;
+        font-size: 1.1rem;
+    }
 }
