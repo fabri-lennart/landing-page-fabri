@@ -388,6 +388,7 @@ body {
 
 .dish-price h4 { display: none; }
 .dish-price .btn-default { font-size: 1.1rem; padding: 6px 18px; }
+.dish-rate { display: none; }
 
 /* ========== TESTIMONIALS SECTION ========== */
 #testimonials {
