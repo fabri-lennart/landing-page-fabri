@@ -10,6 +10,7 @@ const mobileMenu = document.getElementById('mobile-menu');
 
 mobileBtn.addEventListener('click', () => {
   const open = mobileMenu.classList.toggle('open');
+  mobileBtn.setAttribute('aria-expanded', String(open));
   mobileBtn.innerHTML = open
     ? '<i class="fa-solid fa-xmark"></i>'
     : '<i class="fa-solid fa-bars"></i>';
@@ -17,6 +18,7 @@ mobileBtn.addEventListener('click', () => {
 document.querySelectorAll('.mob-link').forEach(l =>
   l.addEventListener('click', () => {
     mobileMenu.classList.remove('open');
+    mobileBtn.setAttribute('aria-expanded', 'false');
     mobileBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
   })
 );
@@ -57,7 +59,7 @@ tabs.forEach(tab => {
 });
 
 // ── ACTIVE NAV LINK ────────────────────────
-const sections  = ['hero','about','stack','experience','contact'];
+const sections  = ['hero','about','services','stack','experience','contact'];
 const navLinks  = document.querySelectorAll('.nav-links a');
 
 window.addEventListener('scroll', () => {

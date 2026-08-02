@@ -3,7 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fabricio Lennart — Data & Automation Engineer</title>
+  <title>Fabricio Lennart — Data Engineer | AI &amp; Machine Learning</title>
+  <meta name="description" content="Data Engineer with 3+ years building ETL/ELT pipelines and data platforms on Google Cloud, plus the ML and AI layer on top: models, RAG systems and LangChain agents in production." />
+  <meta name="author" content="Fabricio Lennart" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Fabricio Lennart — Data Engineer | AI &amp; Machine Learning" />
+  <meta property="og:description" content="ETL/ELT pipelines, data platforms on GCP, and AI systems in production." />
+  <meta property="og:url" content="https://fabri-lennart.github.io/landing-page-fabri/" />
+  <meta property="og:image" content="https://fabri-lennart.github.io/landing-page-fabri/src/images/fabricio.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 18'%3E%3Cpath d='M2 9L9 2L16 9' stroke='%237c3aed' stroke-width='2.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M5 12L9 8L13 12' stroke='%237c3aed' stroke-width='2.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet" />
@@ -29,17 +42,19 @@
       </a>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
+        <li><a href="#services">What I Do</a></li>
         <li><a href="#stack">Stack</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
       <a href="mailto:fabrilennart@gmail.com" class="nav-cta">Contact</a>
-      <button id="mobile-toggle" aria-label="Menu">
+      <button id="mobile-toggle" aria-label="Menu" aria-expanded="false">
         <i class="fa-solid fa-bars"></i>
       </button>
     </nav>
     <div id="mobile-menu">
       <a href="#about" class="mob-link">About</a>
+      <a href="#services" class="mob-link">What I Do</a>
       <a href="#stack" class="mob-link">Stack</a>
       <a href="#experience" class="mob-link">Experience</a>
       <a href="#contact" class="mob-link">Contact</a>
@@ -55,28 +70,28 @@
     <section id="hero">
       <div class="hero-inner">
         <div class="hero-left">
-          <p class="hero-eyebrow">DATA &amp; AUTOMATION ENGINEER</p>
+          <p class="hero-eyebrow">DATA ENGINEER · AI &amp; MACHINE LEARNING</p>
           <h1 class="hero-title">
-            <span class="line-white line-highlight">I automate</span>
-            <span class="line-purple">processes</span>
-            <span class="line-dim">to scale.</span>
+            <span class="line-white line-highlight">I build data</span>
+            <span class="line-purple">pipelines &amp; AI</span>
+            <span class="line-dim">that scale.</span>
           </h1>
           <p class="hero-desc">
-            3+ years building data pipelines, intelligent automations and cloud solutions
-            that transform the way companies operate.
+            3+ years building ETL/ELT pipelines and data platforms on the cloud —
+            and the machine learning and AI layer that runs on top of them.
           </p>
           <div class="hero-actions">
             <a href="#contact" class="btn-purple">Let's talk <i class="fa-solid fa-arrow-right"></i></a>
             <a href="#stack" class="btn-outline-dark">View Stack</a>
           </div>
           <div class="hero-socials">
-            <a href="https://www.linkedin.com/in/fabricio-lennart/" target="_blank" rel="noopener" title="LinkedIn">
+            <a href="https://www.linkedin.com/in/fabricio-lennart/" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn">
               <i class="fa-brands fa-linkedin"></i>
             </a>
-            <a href="https://github.com/fabri-lennart" target="_blank" rel="noopener" title="GitHub">
+            <a href="https://github.com/fabri-lennart" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub">
               <i class="fa-brands fa-github"></i>
             </a>
-            <a href="mailto:fabrilennart@gmail.com" title="Email">
+            <a href="mailto:fabrilennart@gmail.com" title="Email" aria-label="Email">
               <i class="fa-solid fa-envelope"></i>
             </a>
           </div>
@@ -109,15 +124,21 @@
       <div class="about-grid">
         <div class="about-left reveal">
           <p class="about-text">
-            I'm a Data &amp; Automation Engineer with 3+ years of experience
-            building solutions that connect systems, automate processes and
-            transform data into actionable insights.
+            I'm a Data Engineer with 3+ years building <strong>ETL/ELT pipelines and data
+            platforms</strong>, focused on AI and machine learning in production. Most of my work
+            lives on <strong>Google Cloud</strong> — ingesting from APIs and the open web, landing
+            it in BigQuery, modeling it with dbt, orchestrating it with Airflow, streaming it
+            through Kafka, and packaging everything in Docker so it runs the same everywhere.
           </p>
           <p class="about-text">
-            I've worked with remote teams across Australia, the United States,
-            Spain, Mexico, Chile and Argentina, leading analytics projects,
-            implementing data pipelines and developing dashboards that drive
-            strategic decisions.
+            On top of that foundation I ship the ML and AI layer: training and serving models,
+            sentiment analysis pipelines, and LangChain agents and RAG systems wired into real
+            databases and APIs.
+          </p>
+          <p class="about-text">
+            I've delivered for remote teams across the <strong>United States, Australia, Spain,
+            Mexico, Chile and Argentina</strong> — building data infrastructure and leading
+            analytics projects end to end.
           </p>
           <div class="about-stats">
             <div class="about-stat">
@@ -215,13 +236,76 @@
     </section>
 
     <!-- ══════════════════════════════════════
-         SECTION 02 — TECH STACK
+         SECTION 02 — WHAT I DO
     ══════════════════════════════════════ -->
-    <section id="stack" class="section">
+    <section id="services" class="section">
       <div class="section-header">
         <span class="section-bg-num">02</span>
         <div class="section-label-wrap">
           <p class="section-num-label">SECTION 2</p>
+          <h2 class="section-title">What I Do</h2>
+        </div>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fa-solid fa-diagram-project"></i></div>
+          <h3 class="service-title">ETL / ELT Pipelines</h3>
+          <p class="service-desc">
+            End-to-end ingestion, transformation and modeling. Raw sources to analytics-ready
+            layers, incremental loads, data quality tests and dimensional models.
+          </p>
+          <div class="service-tags">
+            <span>dbt</span><span>BigQuery</span><span>SQL</span><span>Python</span>
+          </div>
+        </div>
+
+        <div class="service-card reveal delay-1">
+          <div class="service-icon"><i class="fa-solid fa-brain"></i></div>
+          <h3 class="service-title">AI &amp; Machine Learning</h3>
+          <p class="service-desc">
+            LangChain agents and RAG over company data, sentiment analysis and predictive models
+            with KNIME and scikit-learn, served through APIs and scheduled workflows.
+          </p>
+          <div class="service-tags">
+            <span>LangChain</span><span>RAG</span><span>scikit-learn</span><span>KNIME</span>
+          </div>
+        </div>
+
+        <div class="service-card reveal delay-1">
+          <div class="service-icon"><i class="fa-solid fa-cloud"></i></div>
+          <h3 class="service-title">Orchestration &amp; Cloud</h3>
+          <p class="service-desc">
+            Airflow and Kestra pipelines on GCP, event streaming with Kafka, provisioned with
+            Terraform and deployed through CI/CD.
+          </p>
+          <div class="service-tags">
+            <span>Airflow</span><span>Kestra</span><span>Kafka</span><span>Terraform</span>
+          </div>
+        </div>
+
+        <div class="service-card reveal delay-2">
+          <div class="service-icon"><i class="fa-solid fa-robot"></i></div>
+          <h3 class="service-title">Scraping &amp; Automation</h3>
+          <p class="service-desc">
+            Resilient extraction against dynamic sites and APIs. Headless browsers, async
+            collection, retry and rate-limit handling, plus event-driven workflows with n8n.
+          </p>
+          <div class="service-tags">
+            <span>Playwright</span><span>n8n</span><span>asyncio</span><span>FastAPI</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         SECTION 03 — TECH STACK
+    ══════════════════════════════════════ -->
+    <section id="stack" class="section">
+      <div class="section-header">
+        <span class="section-bg-num">03</span>
+        <div class="section-label-wrap">
+          <p class="section-num-label">SECTION 3</p>
           <h2 class="section-title">Tech Stack</h2>
         </div>
       </div>
@@ -246,55 +330,87 @@
               <line x1="60" y1="60" x2="60" y2="106" stroke="rgba(124,58,237,0.5)" stroke-width="1.5"/>
             </svg>
           </div>
-          <span class="float-tag" style="top:10%;left:60%">Automation</span>
+          <span class="float-tag" style="top:6%;left:52%">AI &amp; ML</span>
           <span class="float-tag" style="top:40%;right:0%">Cloud</span>
-          <span class="float-tag" style="bottom:10%;left:5%">Data Pipelines</span>
+          <span class="float-tag" style="bottom:8%;left:0%">Data Pipelines</span>
         </div>
 
         <!-- Right: tabs + grid -->
         <div class="stack-right">
-          <div class="stack-tabs">
-            <button class="stack-tab active" data-tab="core">Languages &amp; Tools</button>
-            <button class="stack-tab" data-tab="data">Data &amp; Analytics</button>
-            <button class="stack-tab" data-tab="viz">Automation &amp; BI</button>
+          <div class="stack-tabs" role="tablist">
+            <button class="stack-tab active" data-tab="core">Languages &amp; Infra</button>
+            <button class="stack-tab" data-tab="pydata">Python for Data</button>
+            <button class="stack-tab" data-tab="dataeng">Data Engineering</button>
+            <button class="stack-tab" data-tab="ai">AI &amp; Automation</button>
+            <button class="stack-tab" data-tab="bi">Analytics &amp; BI</button>
           </div>
 
           <div class="tab-panel active" id="tab-core">
             <div class="icon-grid">
-              <div class="icon-item"><span class="tech-emoji">🐍</span><p>Python</p></div>
-              <div class="icon-item"><span class="tech-emoji">🗄️</span><p>SQL</p></div>
-              <div class="icon-item"><span class="tech-emoji">💻</span><p>Bash</p></div>
-              <div class="icon-item"><span class="tech-emoji">🔀</span><p>Git</p></div>
-              <div class="icon-item"><span class="tech-emoji">🐳</span><p>Docker</p></div>
-              <div class="icon-item"><span class="tech-emoji">🐧</span><p>Linux</p></div>
-              <div class="icon-item"><span class="tech-emoji">🏗️</span><p>Terraform</p></div>
-              <div class="icon-item"><span class="tech-emoji">⚡</span><p>FastAPI</p></div>
+              <div class="icon-item"><img class="tech-icon" src="src/images/tech/python.svg" alt="" /><p>Python</p></div>
+              <div class="icon-item"><img class="tech-icon" src="src/images/tech/sql.svg" alt="" /><p>SQL</p></div>
+              <div class="icon-item"><img class="tech-icon" src="src/images/tech/go.svg" alt="" /><p>Go</p></div>
+              <div class="icon-item"><img class="tech-icon" src="src/images/tech/gnubash.svg" alt="" /><p>Bash</p></div>
+              <div class="icon-item"><img class="tech-icon" src="src/images/tech/docker.svg" alt="" /><p>Docker</p></div>
+              <div class="icon-item"><img class="tech-icon" src="src/images/tech/terraform.svg" alt="" /><p>Terraform</p></div>
+              <div class="icon-item"><img class="tech-icon" src="src/images/tech/linux.svg" alt="" /><p>Linux</p></div>
+              <div class="icon-item"><img class="tech-icon" src="src/images/tech/git.svg" alt="" /><p>Git</p></div>
+              <div class="icon-item"><img class="tech-icon" src="src/images/tech/githubactions.svg" alt="" /><p>GitHub Actions</p></div>
             </div>
           </div>
 
-          <div class="tab-panel" id="tab-data">
+          <div class="tab-panel" id="tab-pydata">
             <div class="icon-grid">
-              <div class="icon-item"><span class="tech-emoji">☁️</span><p>GCP</p></div>
-              <div class="icon-item"><span class="tech-emoji">❄️</span><p>Snowflake</p></div>
-              <div class="icon-item"><span class="tech-emoji">🔄</span><p>Airflow</p></div>
-              <div class="icon-item"><span class="tech-emoji">🦆</span><p>DuckDB</p></div>
-              <div class="icon-item"><span class="tech-emoji">🌊</span><p>MotherDuck</p></div>
-              <div class="icon-item"><span class="tech-emoji">☁️</span><p>Data Cloud</p></div>
-              <div class="icon-item"><span class="tech-emoji">📊</span><p>GA4</p></div>
-              <div class="icon-item"><span class="tech-emoji">🗃️</span><p>MongoDB</p></div>
+              <div class="icon-item"><img class="tech-icon" src="src/images/tech/pandas.svg" alt="" /><p>pandas</p></div>
+              <div class="icon-item"><img class="tech-icon" src="src/images/tech/numpy.svg" alt="" /><p>NumPy</p></div>
+              <div class="icon-item"><img class="tech-icon" src="src/images/tech/polars.svg" alt="" /><p>Polars</p></div>
+              <div class="icon-item"><img class="tech-icon" src="src/images/tech/apachespark.svg" alt="" /><p>PySpark</p></div>
+              <div class="icon-item"><img class="tech-icon" src="src/images/tech/sqlalchemy.svg" alt="" /><p>SQLAlchemy</p></div>
+              <div class="icon-item"><img class="tech-icon" src="src/images/tech/pydantic.svg" alt="" /><p>Pydantic</p></div>
+              <div class="icon-item"><img class="tech-icon" src="src/images/tech/fastapi.svg" alt="" /><p>FastAPI</p></div>
+              <div class="icon-item"><img class="tech-icon" src="src/images/tech/pytest.svg" alt="" /><p>pytest</p></div>
             </div>
           </div>
 
-          <div class="tab-panel" id="tab-viz">
+          <div class="tab-panel" id="tab-dataeng">
             <div class="icon-grid">
-              <div class="icon-item"><span class="tech-emoji">🔗</span><p>n8n</p></div>
-              <div class="icon-item"><span class="tech-emoji">🤖</span><p>KNIME</p></div>
-              <div class="icon-item"><span class="tech-emoji">🧠</span><p>AI Agents</p></div>
-              <div class="icon-item"><span class="tech-emoji">📚</span><p>RAG</p></div>
-              <div class="icon-item"><span class="tech-emoji">📈</span><p>Tableau</p></div>
-              <div class="icon-item"><span class="tech-emoji">📉</span><p>Power BI</p></div>
-              <div class="icon-item"><span class="tech-emoji">🔭</span><p>Looker</p></div>
-              <div class="icon-item"><span class="tech-emoji">💡</span><p>evidence.dev</p></div>
+              <div class="icon-item"><img class="tech-icon" src="src/images/tech/googlecloud.svg" alt="" /><p>Google Cloud</p></div>
+              <div class="icon-item"><img class="tech-icon" src="src/images/tech/googlebigquery.svg" alt="" /><p>BigQuery</p></div>
+              <div class="icon-item"><img class="tech-icon" src="src/images/tech/snowflake.svg" alt="" /><p>Snowflake</p></div>
+              <div class="icon-item"><img class="tech-icon" src="src/images/tech/apacheairflow.svg" alt="" /><p>Airflow</p></div>
+              <div class="icon-item"><img class="tech-icon" src="src/images/tech/kestra.svg" alt="" /><p>Kestra</p></div>
+              <div class="icon-item"><img class="tech-icon" src="src/images/tech/dbt.svg" alt="" /><p>dbt</p></div>
+              <div class="icon-item"><img class="tech-icon" src="src/images/tech/apachekafka.svg" alt="" /><p>Kafka</p></div>
+              <div class="icon-item"><img class="tech-icon" src="src/images/tech/postgresql.svg" alt="" /><p>PostgreSQL</p></div>
+              <div class="icon-item"><img class="tech-icon" src="src/images/tech/mongodb.svg" alt="" /><p>MongoDB</p></div>
+              <div class="icon-item"><img class="tech-icon" src="src/images/tech/duckdb.svg" alt="" /><p>DuckDB</p></div>
+              <div class="icon-item"><i class="fa-solid fa-cloud tech-fa"></i><p>MotherDuck</p></div>
+              <div class="icon-item"><img class="tech-icon" src="src/images/tech/salesforce.svg" alt="" /><p>Data Cloud</p></div>
+            </div>
+          </div>
+
+          <div class="tab-panel" id="tab-ai">
+            <div class="icon-grid">
+              <div class="icon-item"><img class="tech-icon" src="src/images/tech/langchain.svg" alt="" /><p>LangChain</p></div>
+              <div class="icon-item"><img class="tech-icon" src="src/images/tech/scikitlearn.svg" alt="" /><p>scikit-learn</p></div>
+              <div class="icon-item"><img class="tech-icon" src="src/images/tech/knime.svg" alt="" /><p>KNIME</p></div>
+              <div class="icon-item"><i class="fa-solid fa-robot tech-fa"></i><p>AI Agents</p></div>
+              <div class="icon-item"><i class="fa-solid fa-book-open tech-fa"></i><p>RAG</p></div>
+              <div class="icon-item"><img class="tech-icon" src="src/images/tech/n8n.svg" alt="" /><p>n8n</p></div>
+              <div class="icon-item"><img class="tech-icon" src="src/images/tech/playwright.svg" alt="" /><p>Playwright</p></div>
+              <div class="icon-item"><i class="fa-solid fa-face-smile tech-fa"></i><p>Sentiment</p></div>
+            </div>
+          </div>
+
+          <div class="tab-panel" id="tab-bi">
+            <div class="icon-grid">
+              <div class="icon-item"><img class="tech-icon" src="src/images/tech/tableau.svg" alt="" /><p>Tableau</p></div>
+              <div class="icon-item"><img class="tech-icon" src="src/images/tech/powerbi.svg" alt="" /><p>Power BI</p></div>
+              <div class="icon-item"><img class="tech-icon" src="src/images/tech/looker.svg" alt="" /><p>Looker</p></div>
+              <div class="icon-item"><i class="fa-solid fa-chart-line tech-fa"></i><p>evidence.dev</p></div>
+              <div class="icon-item"><img class="tech-icon" src="src/images/tech/plotly.svg" alt="" /><p>Plotly</p></div>
+              <div class="icon-item"><img class="tech-icon" src="src/images/tech/googleanalytics.svg" alt="" /><p>GA4</p></div>
+              <div class="icon-item"><img class="tech-icon" src="src/images/tech/googletagmanager.svg" alt="" /><p>Tag Manager</p></div>
             </div>
           </div>
 
@@ -308,13 +424,13 @@
     </section>
 
     <!-- ══════════════════════════════════════
-         SECTION 03 — EXPERIENCE
+         SECTION 04 — EXPERIENCE
     ══════════════════════════════════════ -->
     <section id="experience" class="section">
       <div class="section-header">
-        <span class="section-bg-num">03</span>
+        <span class="section-bg-num">04</span>
         <div class="section-label-wrap">
-          <p class="section-num-label">SECTION 3</p>
+          <p class="section-num-label">SECTION 4</p>
           <h2 class="section-title">Experience</h2>
         </div>
       </div>
@@ -332,12 +448,33 @@
               <div class="tl-card">
                 <div class="tl-head">
                   <div>
+                    <h4 class="tl-role">Data Analyst</h4>
+                    <p class="tl-loc">Holley — Bowling Green, Kentucky, USA</p>
+                  </div>
+                  <div class="tl-meta">
+                    <span class="badge-type fulltime">Full-time</span>
+                    <span class="tl-date">2026 – Present</span>
+                  </div>
+                </div>
+                <ul class="tl-bullets">
+                  <li>Data pipelines and analytics on Snowflake with Python &amp; SQL</li>
+                  <li>Automation of recurring reporting and data workflows</li>
+                  <li>Analytics for the automotive &amp; performance parts business</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-card">
+                <div class="tl-head">
+                  <div>
                     <h4 class="tl-role">Data Specialist</h4>
                     <p class="tl-loc">Remote, Mexico</p>
                   </div>
                   <div class="tl-meta">
                     <span class="badge-type fulltime">Full-time</span>
-                    <span class="tl-date">May 2025 – Present</span>
+                    <span class="tl-date">May 2025 – 2026</span>
                   </div>
                 </div>
                 <ul class="tl-bullets">
@@ -442,36 +579,33 @@
             <i class="fa-solid fa-microphone"></i> Talks &amp; Contributions
           </div>
           <div class="talks-list">
-            <a href="https://youtu.be/example1" class="talk-card" target="_blank" rel="noopener">
-              <div class="talk-body">
-                <h4>From API &amp; Low Code to Insights</h4>
-                <p>ComuniDatos User Group</p>
-              </div>
-              <div class="talk-right">
-                <span class="talk-year">2024</span>
-                <i class="fa-solid fa-arrow-up-right-from-square talk-ext"></i>
-              </div>
-            </a>
-            <a href="https://youtu.be/example2" class="talk-card" target="_blank" rel="noopener">
-              <div class="talk-body">
-                <h4>First Steps with DuckDB</h4>
-                <p>Data Wizards Club</p>
-              </div>
-              <div class="talk-right">
-                <span class="talk-year">2024</span>
-                <i class="fa-solid fa-arrow-up-right-from-square talk-ext"></i>
-              </div>
-            </a>
-            <a href="https://youtu.be/example3" class="talk-card" target="_blank" rel="noopener">
+            <div class="talk-card">
               <div class="talk-body">
                 <h4>BI as Code: The Revolution You Need to Know</h4>
                 <p>ValdezData</p>
               </div>
               <div class="talk-right">
                 <span class="talk-year">2026</span>
-                <i class="fa-solid fa-arrow-up-right-from-square talk-ext"></i>
               </div>
-            </a>
+            </div>
+            <div class="talk-card">
+              <div class="talk-body">
+                <h4>From API &amp; Low Code to Insights</h4>
+                <p>ComuniDatos User Group</p>
+              </div>
+              <div class="talk-right">
+                <span class="talk-year">2024</span>
+              </div>
+            </div>
+            <div class="talk-card">
+              <div class="talk-body">
+                <h4>First Steps with DuckDB</h4>
+                <p>Data Wizards Club</p>
+              </div>
+              <div class="talk-right">
+                <span class="talk-year">2024</span>
+              </div>
+            </div>
             <div class="talk-footer-badge">
               <i class="fa-solid fa-microphone-lines"></i>
               Speaker &amp; Open Source Contributor
@@ -482,13 +616,13 @@
     </section>
 
     <!-- ══════════════════════════════════════
-         SECTION 04 — CONTACT
+         SECTION 05 — CONTACT
     ══════════════════════════════════════ -->
     <section id="contact" class="section">
       <div class="section-header">
-        <span class="section-bg-num">04</span>
+        <span class="section-bg-num">05</span>
         <div class="section-label-wrap">
-          <p class="section-num-label">SECTION 4</p>
+          <p class="section-num-label">SECTION 5</p>
           <h2 class="section-title">Contact</h2>
         </div>
       </div>
@@ -500,13 +634,13 @@
             <span class="text-purple">next project</span>
           </h3>
           <p class="contact-desc">
-            I'm open to remote opportunities, consulting projects and
-            collaborations in data automation. If you have an interesting
-            challenge, let's talk.
+            I'm open to remote data engineering roles, consulting projects and
+            collaborations in data and AI. If you have an interesting challenge,
+            let's talk.
           </p>
           <p class="contact-location">
             <i class="fa-solid fa-location-dot"></i>
-            Latin America (Remote)
+            Bowling Green, Kentucky · Open to Remote
           </p>
           <a href="mailto:fabrilennart@gmail.com" class="btn-purple">
             Send message <i class="fa-solid fa-arrow-up-right-from-square"></i>
@@ -531,7 +665,7 @@
             </div>
             <div class="contact-card-body">
               <p class="contact-card-label">LinkedIn</p>
-              <p class="contact-card-val">/in/fabriciolennart</p>
+              <p class="contact-card-val">/in/fabricio-lennart</p>
             </div>
             <i class="fa-solid fa-arrow-up-right-from-square contact-arrow"></i>
           </a>
@@ -542,7 +676,7 @@
             </div>
             <div class="contact-card-body">
               <p class="contact-card-label">GitHub</p>
-              <p class="contact-card-val">/fabriciolennart</p>
+              <p class="contact-card-val">/fabri-lennart</p>
             </div>
             <i class="fa-solid fa-arrow-up-right-from-square contact-arrow"></i>
           </a>
@@ -576,11 +710,11 @@
         Fabricio Lennart
       </a>
       <div class="footer-socials">
-        <a href="https://www.linkedin.com/in/fabricio-lennart/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://github.com/fabri-lennart" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
-        <a href="mailto:fabrilennart@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/fabricio-lennart/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/fabri-lennart" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:fabrilennart@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
       </div>
-      <p class="footer-copy">&copy; 2025 Fabricio Lennart. Built with HTML &amp; CSS.</p>
+      <p class="footer-copy">&copy; 2026 Fabricio Lennart. Built with HTML &amp; CSS.</p>
     </div>
   </footer>
 
