@@ -6,7 +6,7 @@ from datetime import datetime
 from pathlib import Path
 
 from bokeh.embed import json_item
-from bokeh.layouts import column
+from bokeh.layouts import column, row
 from bokeh.models import (
     ColumnDataSource,
     CustomJS,
@@ -441,12 +441,14 @@ def make_demographics(report):
         value="Followers",
         options=["Followers", "Content audience"],
         width=220,
+        sizing_mode="stretch_width",
     )
     select = Select(
         title="Breakdown",
         value=next(item["label"] for item in category_options if item["id"] == initial_category),
         options=[item["label"] for item in category_options],
         width=220,
+        sizing_mode="stretch_width",
     )
     callback = CustomJS(
         args={
@@ -486,7 +488,7 @@ def make_demographics(report):
     )
     profile.js_on_change("value", callback)
     select.js_on_change("value", callback)
-    controls = column(profile, select, sizing_mode="stretch_width", spacing=6)
+    controls = row(profile, select, sizing_mode="stretch_width", spacing=12)
     return column(controls, plot, sizing_mode="stretch_width", spacing=8)
 
 

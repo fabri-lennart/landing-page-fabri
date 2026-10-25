@@ -1575,8 +1575,6 @@ footer { background: #111117; border: 0; }
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 22px;
   margin-top: 24px;
-  padding-top: 18px;
-  border-top: 1px solid rgba(255,255,255,.13);
 }
 .experience-facts p {
   color: #aaa4b4;
