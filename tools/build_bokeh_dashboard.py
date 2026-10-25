@@ -95,9 +95,17 @@ def make_performance(report):
                 for row in rows
             ],
             "rate": [
-                round(row["engagements"] / row["impressions"] * 100, 3)
+                max(0, round(row["engagements"] / row["impressions"] * 100, 3))
                 if row["impressions"] else 0
                 for row in rows
+            ],
+            "rate_size": [
+                6 if monthly and rate > 0 else 4 if rate > 0 else 0
+                for rate in (
+                    max(0, row["engagements"] / row["impressions"] * 100)
+                    if row["impressions"] else 0
+                    for row in rows
+                )
             ],
             "width": widths,
         }
@@ -105,14 +113,20 @@ def make_performance(report):
     monthly = payload(report["monthly"], True)
     daily = payload(report["daily"], False)
     source = ColumnDataSource(monthly)
+    impressions_range = Range1d(
+        start=0,
+        end=max(monthly["impressions"]) * 1.1,
+    )
     plot = style_plot(figure(
         x_axis_type="datetime",
         height=350,
+        y_range=impressions_range,
         y_axis_label="Impressions",
         tools="pan,wheel_zoom,box_zoom,reset,save",
         active_scroll="wheel_zoom",
     ))
-    plot.extra_y_ranges = {"rate": Range1d(start=0, end=6)}
+    rate_range = Range1d(start=0, end=6)
+    plot.extra_y_ranges = {"rate": rate_range}
     plot.add_layout(LinearAxis(y_range_name="rate", axis_label="Engagement rate (%)"), "right")
     bars = plot.vbar(
         x="date",
@@ -135,7 +149,7 @@ def make_performance(report):
         y="rate",
         source=source,
         y_range_name="rate",
-        size=6,
+        size="rate_size",
         color=PINK,
         line_color="#ffffff",
         line_width=1,
@@ -183,6 +197,10 @@ def make_performance(report):
             "monthly": monthly,
             "daily": daily,
             "plot": plot,
+            "impressionsRange": impressions_range,
+            "rateRange": rate_range,
+            "rateLine": line,
+            "ratePoints": points,
             "avgImpressions": avg_impressions,
             "avgRate": avg_rate_span,
         },
@@ -192,6 +210,11 @@ def make_performance(report):
             const values = data.date;
             plot.x_range.start = values[0];
             plot.x_range.end = values[values.length - 1];
+            impressionsRange.start = 0;
+            impressionsRange.end = Math.max(...data.impressions) * 1.1;
+            const maxRate = Math.max(...data.rate);
+            rateRange.end = Math.max(6, Math.ceil(maxRate / 2) * 2);
+            rateLine.visible = cb_obj.active === 0;
             const full = data.rate.filter((value, index) => data.complete[index] && value > 0);
             const impressions = data.impressions.filter((value, index) => data.complete[index]);
             avgImpressions.location = impressions.reduce((a, b) => a + b, 0) / impressions.length;
@@ -199,7 +222,7 @@ def make_performance(report):
             const label = document.getElementById('average-reference-label');
             if (label) label.textContent = cb_obj.active === 0
               ? 'Dashed lines · complete-month averages'
-              : 'Dashed lines · daily averages';
+              : 'Dashed line · daily average; dots show daily rates';
         """,
     ))
     return column(controls, plot, sizing_mode="stretch_width", spacing=8)

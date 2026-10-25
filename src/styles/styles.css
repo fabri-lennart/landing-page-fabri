@@ -1620,17 +1620,19 @@ footer { background: #111117; border: 0; }
   letter-spacing: .04em;
   text-transform: uppercase;
 }
-.tech-groups { border-top: 1px solid rgba(255,255,255,.13); }
-.tech-row {
+.tech-groups {
   display: grid;
-  grid-template-columns: 155px 1fr;
-  align-items: start;
-  gap: 18px;
-  padding: 16px 0;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 32px;
+  border-top: 1px solid rgba(255,255,255,.13);
+}
+.tech-row {
+  min-width: 0;
+  padding: 14px 0;
   border-bottom: 1px solid rgba(255,255,255,.13);
 }
 .tech-row h3 {
-  padding-top: 5px;
+  margin-bottom: 10px;
   color: #c7adf5;
   font-size: .76rem;
   font-weight: 550;
@@ -1664,6 +1666,9 @@ footer { background: #111117; border: 0; }
   .experience-facts p { display: grid; grid-template-columns: 105px 1fr; gap: 8px; }
   .experience-facts strong { margin: 0; }
   .location-legend { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .tech-row { grid-template-columns: 1fr; gap: 9px; }
   .country-list { font-size: .69rem; }
+}
+
+@media (max-width: 760px) {
+  .tech-groups { grid-template-columns: 1fr; }
 }
