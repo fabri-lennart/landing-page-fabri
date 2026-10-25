@@ -1219,7 +1219,7 @@ footer { background: #111117; border: 0; }
 /* ── PORTFOLIO LAYOUT ───────────────────── */
 .legacy-section { display: none; }
 #hero {
-  min-height: min(660px, 88vh);
+  min-height: max(700px, 100svh);
   padding-top: 96px;
 }
 .hero-inner { gap: 18px; }
@@ -1529,7 +1529,7 @@ footer { background: #111117; border: 0; }
   .social-chart-map { min-height: 300px; }
   .social-chart-demographic { min-height: 440px; }
   .social-chart-posts { min-height: 400px; }
-  #hero { min-height: min(690px, 94svh); }
+  #hero { min-height: max(700px, 100svh); }
   .hero-title { font-size: clamp(1.5rem, 8vw, 2.6rem); }
   .expertise-list p {
     grid-template-columns: 30px 1fr;
@@ -1560,43 +1560,15 @@ footer { background: #111117; border: 0; }
   background: #241735;
   border-top-color: rgba(255,255,255,.08);
 }
-.experience-map-block { margin-top: 32px; }
-.map-heading h3 {
-  color: #e5e0eb;
-  font-size: 1rem;
-  font-weight: 550;
-}
-.experience-map {
-  display: block;
-  width: 100%;
-  height: auto;
-  aspect-ratio: 2;
-  margin: 14px 0 10px;
-  border-radius: 8px;
-  object-fit: cover;
-}
-.location-legend {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 10px 18px;
-  margin: 12px 0 0;
-  list-style: none;
-}
-.location-legend li {
-  color: #ded8e7;
-  font-size: .75rem;
-}
-.location-legend li > span {
-  margin-right: 5px;
-  color: #b69aff;
-  font-size: .65rem;
-  font-weight: 700;
-}
-.location-legend small {
-  display: block;
-  margin: 3px 0 0 29px;
+.experience-countries {
+  margin-top: 18px;
   color: #aaa4b4;
-  font-size: .68rem;
+  font-size: .75rem;
+  line-height: 1.7;
+}
+.experience-countries strong {
+  color: #c7adf5;
+  font-weight: 600;
 }
 .experience-facts {
   display: grid;
@@ -1667,7 +1639,6 @@ footer { background: #111117; border: 0; }
   .experience-facts { grid-template-columns: 1fr; gap: 12px; }
   .experience-facts p { display: grid; grid-template-columns: 105px 1fr; gap: 8px; }
   .experience-facts strong { margin: 0; }
-  .location-legend { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .country-list { font-size: .69rem; }
 }
 
