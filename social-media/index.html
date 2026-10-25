@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="An interactive year-in-review of LinkedIn impressions, engagement and audience growth." />
+  <meta name="theme-color" content="#ffffff" />
+  <title>LinkedIn Analytics — Fabricio Lennart</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../src/styles/header.css" />
+  <link rel="stylesheet" href="report.css?v=3" />
+</head>
+<body>
+  <header class="report-header">
+    <a class="report-brand" href="../">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+        <path d="M2 9L9 2L16 9M5 12L9 8L13 12" stroke="#a78bfa" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      Fabricio <span>/ Social analytics</span>
+    </a>
+    <a class="report-back" href="../">Back to portfolio <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main class="report-main">
+    <section class="report-intro">
+      <p class="report-kicker"><span></span> LINKEDIN · YEAR IN REVIEW</p>
+      <p class="report-period" id="report-period">Loading reporting period…</p>
+      <h1 id="story-headline">LinkedIn <span>analytics.</span></h1>
+      <p class="report-subtitle" id="story-deck">Visibility, engagement and audience growth.</p>
+    </section>
+
+    <section class="report-kpis" aria-label="Year in review">
+      <article class="kpi-card kpi-impressions">
+        <span class="kpi-label">TOTAL IMPRESSIONS</span>
+        <strong id="kpi-impressions">—</strong>
+        <span class="kpi-context">Across the reporting period</span>
+      </article>
+      <article class="kpi-card kpi-engagements">
+        <span class="kpi-label">ENGAGEMENTS</span>
+        <strong id="kpi-engagements">—</strong>
+        <span class="kpi-context"><b id="kpi-engagement-rate">—</b> of impressions</span>
+      </article>
+      <article class="kpi-card kpi-reach">
+        <span class="kpi-label">MEMBERS REACHED</span>
+        <strong id="kpi-reach">—</strong>
+        <span class="kpi-context">Unique LinkedIn members</span>
+      </article>
+      <article class="kpi-card kpi-followers">
+        <span class="kpi-label">FOLLOWER COMMUNITY</span>
+        <strong id="kpi-followers">—</strong>
+        <span class="kpi-context"><b id="kpi-new-followers">—</b> new this year</span>
+      </article>
+    </section>
+
+    <section class="story-layout" aria-label="Performance story">
+      <article class="report-panel trend-panel">
+        <div class="panel-heading">
+          <div>
+            <h2>Impressions and engagement rate</h2>
+          </div>
+        </div>
+        <p class="chart-control-note">Monthly or daily changes the time detail in this chart only; it does not filter the other charts.</p>
+        <div class="chart-legend">
+          <span><i class="legend-dot impressions-dot"></i> Impressions</span>
+          <span><i class="legend-dot engagements-dot"></i> Engagement rate</span>
+          <span><i class="average-key"></i><span id="average-reference-label">Dashed lines · complete-month averages</span></span>
+        </div>
+        <div id="performance-chart" class="chart chart-large" role="img" aria-label="Interactive monthly LinkedIn impressions and engagement rate chart"></div>
+      </article>
+
+    </section>
+
+    <section class="report-panel audience-panel">
+      <div class="panel-heading">
+        <div>
+          <h2>Monthly follower gains</h2>
+        </div>
+        <span class="panel-note" id="follower-chart-note">New followers by month</span>
+      </div>
+      <div id="followers-chart" class="chart chart-medium" role="img" aria-label="Interactive monthly new follower chart"></div>
+    </section>
+
+    <section class="analysis-grid">
+      <article class="report-panel correlation-panel">
+        <div class="panel-heading">
+          <div>
+            <h2>Monthly interactions and new followers</h2>
+          </div>
+        </div>
+        <p class="chart-deck">Complete months only · this comparison shows association, not causation.</p>
+        <div class="chart-legend correlation-legend">
+          <span><i class="legend-dot impressions-dot"></i> Interactions</span>
+          <span><i class="legend-dot engagements-dot"></i> New followers</span>
+        </div>
+        <div id="correlation-chart" class="chart chart-correlation" role="img" aria-label="Grouped monthly bars comparing interaction totals with new followers"></div>
+      </article>
+
+      <article class="report-panel audience-map-panel">
+        <div class="panel-heading">
+          <div>
+            <p class="report-kicker">WHERE YOUR AUDIENCE IS</p>
+            <h2 id="map-title">Follower audience</h2>
+          </div>
+        </div>
+        <p class="chart-control-note">Map audience · this changes the location markers on this map only, not the other charts.</p>
+        <div id="audience-map" class="chart chart-map" role="img" aria-label="Map of the largest reported audience locations"></div>
+        <p class="map-source-note">Metro areas only · LinkedIn-reported audience share · Basemap: Natural Earth, public domain.</p>
+      </article>
+    </section>
+
+    <section class="report-panel demographic-panel">
+      <div class="panel-heading">
+        <div>
+          <p class="report-kicker">WHO YOU REACH</p>
+          <h2 id="demographic-title">Follower audience · Industries</h2>
+        </div>
+      </div>
+      <p class="chart-control-note">Audience and Breakdown update only this audience profile chart.</p>
+      <div id="demographic-chart" class="chart chart-demographic" role="img" aria-label="Interactive ranking of audience profile categories"></div>
+    </section>
+
+    <section class="report-panel posts-panel">
+      <div class="panel-heading">
+        <div>
+          <p class="report-kicker">CONTENT THAT CONNECTED</p>
+          <h2 id="posts-chart-title">The posts behind the peaks</h2>
+        </div>
+      </div>
+      <p class="chart-deck" id="posts-chart-deck">Hover for details · select a bar to open the post on LinkedIn.</p>
+      <p class="chart-control-note">Impressions or Engagements changes only the post ranking below.</p>
+      <div id="posts-chart" class="chart chart-posts" role="img" aria-label="Interactive ranking of top LinkedIn posts"></div>
+    </section>
+
+    <p class="report-source">Source: LinkedIn analytics export · October 2025 and October 2026 are partial months in this reporting period.</p>
+    <p id="report-error" class="report-error" role="alert" hidden></p>
+  </main>
+
+  <footer class="report-footer">
+    <a href="../">← Back to Fabricio's portfolio</a>
+    <span>Built with DuckDB &amp; Bokeh</span>
+  </footer>
+
+  <script src="report-bokeh.js?v=3" defer></script>
+  <script>
+    if (new URLSearchParams(location.search).has('embed')) {
+      document.documentElement.classList.add('report-embedded');
+    }
+  </script>
+</body>
+</html>

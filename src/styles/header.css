@@ -8,9 +8,9 @@
 }
 
 #site-header.scrolled {
-  background: rgba(14,14,20,0.92);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  background: rgba(14,14,20,0.97);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   border-bottom-color: rgba(255,255,255,0.07);
 }
 
@@ -48,7 +48,7 @@
   font-family: 'Inter', sans-serif;
   font-size: 0.8rem;
   font-weight: 500;
-  color: rgba(255,255,255,0.45);
+  color: rgba(238,234,244,0.76);
   padding: 6px 14px;
   border-radius: 7px;
   transition: color .15s, background .15s;
@@ -58,6 +58,7 @@
   color: #fff;
   background: rgba(255,255,255,0.05);
 }
+.nav-links a.active { color: #b69aff; }
 
 .nav-cta {
   font-family: 'Inter', sans-serif;
@@ -90,8 +91,8 @@
   display: none;
   flex-direction: column;
   gap: 2px;
-  background: rgba(14,14,20,0.97);
-  backdrop-filter: blur(20px);
+  background: rgba(14,14,20,0.99);
+  backdrop-filter: blur(8px);
   border-bottom: 1px solid rgba(255,255,255,0.07);
   padding: 14px clamp(20px,6vw,80px) 18px;
 }
@@ -101,7 +102,7 @@
   font-family: 'Inter', sans-serif;
   font-size: 0.9rem;
   font-weight: 500;
-  color: rgba(255,255,255,0.55);
+  color: rgba(255,255,255,0.82);
   padding: 10px 12px;
   border-radius: 8px;
   transition: color .15s, background .15s;

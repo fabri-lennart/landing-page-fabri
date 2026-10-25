@@ -23,6 +23,22 @@ document.querySelectorAll('.mob-link').forEach(l =>
   })
 );
 
+// ── CONTACT FORM ──────────────────────────
+const contactForm = document.getElementById('contact-form');
+contactForm.addEventListener('submit', event => {
+  event.preventDefault();
+  const formData = new FormData(contactForm);
+  const subject = 'Portfolio inquiry';
+  const body = [
+    `Name: ${formData.get('name')}`,
+    `Email: ${formData.get('email')}`,
+    '',
+    formData.get('message')
+  ].join('\n');
+
+  window.location.href = `mailto:fabrilennart@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+});
+
 // ── REVEAL ON SCROLL ───────────────────────
 const revealObs = new IntersectionObserver(entries => {
   entries.forEach(e => {
@@ -45,21 +61,8 @@ const langObs = new IntersectionObserver(entries => {
 }, { threshold: 0.3 });
 document.querySelectorAll('.lang-fill').forEach(f => langObs.observe(f));
 
-// ── STACK TABS ─────────────────────────────
-const tabs   = document.querySelectorAll('.stack-tab');
-const panels = document.querySelectorAll('.tab-panel');
-
-tabs.forEach(tab => {
-  tab.addEventListener('click', () => {
-    tabs.forEach(t => t.classList.remove('active'));
-    panels.forEach(p => p.classList.remove('active'));
-    tab.classList.add('active');
-    document.getElementById('tab-' + tab.dataset.tab).classList.add('active');
-  });
-});
-
 // ── ACTIVE NAV LINK ────────────────────────
-const sections  = ['hero','about','services','stack','experience','contact'];
+const sections  = ['hero','experience','tech-stack','social-report','activity'];
 const navLinks  = document.querySelectorAll('.nav-links a');
 
 window.addEventListener('scroll', () => {
