@@ -1592,7 +1592,6 @@ footer { background: #111117; border: 0; }
 }
 .tech-groups {
   display: block;
-  border-top: 1px solid rgba(255,255,255,.13);
 }
 .tech-row {
   display: grid;
